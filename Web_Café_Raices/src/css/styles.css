@@ -1,0 +1,283 @@
+:root {
+  --color-tierra: #6f4f29;
+  --color-bosque: #2e8b57;
+  --color-crema: #f5f5dc;
+  --color-dorado: #c5a100;
+  --color-carbon: #333333;
+}
+
+/*Cuerpo de la web*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-crema);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-crema);
+}
+/*Menú principal*/
+
+.header__menu {
+  border-bottom: 3px solid var(--color-dorado);
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: var(--color-crema);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-tierra);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu__item {
+  margin: 20px;
+}
+
+.menu__item:hover,
+.menu__item-activo {
+  margin: 20px;
+  color: var(--color-bosque);
+  cursor: pointer;
+  transform: scale(1.1);
+  text-decoration: underline;
+  text-decoration-color: var(--color-dorado);
+  transition: all 0.3s ease-in-out;
+}
+
+/*Cuerpo principal*/
+
+#main__body {
+  background-image: url(../img/cafe-hogar.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.body__info {
+  padding-top: 100px;
+  font-style: italic;
+  font-size: 80px;
+  color: var(--color-crema);
+  text-shadow: 3px 3px 0px var(--color-carbon);
+}
+
+.info__btn {
+  cursor: pointer;
+  width: 25%;
+  font-weight: bold;
+  font-size: large;
+  color: var(--color-dorado);
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.info__btn:hover {
+  transform: scale(1.1);
+}
+
+/*Segundo cuerpo*/
+
+#second__body {
+  background-image: url(../img/cafe-molienda.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.body__presentation {
+  padding-top: 100px;
+  font-style: italic;
+  font-size: 60px;
+  line-height: 100px;
+  color: var(--color-crema);
+  text-shadow: 3px 3px 0px var(--color-carbon);
+}
+
+/*Carrusel de productos*/
+#products__presentation {
+  font-size: 24px;
+  color: var(--color-dorado);
+  padding-top: 15px;
+  width: 100%;
+}
+
+.body__products {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  height: 100%;
+}
+
+.products__product {
+  background-color: var(--color-tierra);
+  margin: 20px;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 3px var(--color-dorado);
+  transition: all 300ms ease-in-out;
+}
+
+.products__product:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.grain__picture,
+.capsules__picture,
+.accesories__picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 2px solid var(--color-dorado);
+  transition: all 300ms ease-in-out;
+}
+
+.grain__picture:hover,
+.capsules__picture:hover,
+.accesories__picture:hover {
+  transform: scale(1.3);
+}
+
+.product__name {
+  margin-top: 50px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 50px;
+}
+
+.products__btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: var(--color-dorado);
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.products__btn:hover {
+  transform: scale(1.1);
+}
+
+.benefits__title {
+  margin: 0;
+}
+
+#body__benefits {
+  color: var(--color-crema);
+  font-style: italic;
+  line-height: 120px;
+  font-size: 60px;
+  text-shadow: 3px 3px 0px var(--color-carbon);
+  background-image: url(/src/img/taza-selva.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.benefits__list {
+  list-style-type: none;
+}
+
+.fa-solid {
+  padding-left: 25px;
+  color: var(--color-dorado);
+}
+/*FOOTER*/
+
+#main__footer {
+  background-color: var(--color-tierra);
+  color: var(--color-crema);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  line-height: 30px;
+}
+
+.info__contact {
+  padding: 0;
+  margin: 0;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+}
+
+.enlaces__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 0;
+}
+
+.submit__btn {
+  background-color: var(--color-bosque);
+  border: 1px solid var(--color-dorado);
+  color: var(--color-crema);
+  cursor: pointer;
+  width: 55%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit__btn:hover {
+  transform: scale(1.1);
+}
+
+.footer__footer {
+  text-align: center;
+  grid-row: 3;
+  grid-column: 1/5;
+  padding: 0;
+  margin: 0;
+}
