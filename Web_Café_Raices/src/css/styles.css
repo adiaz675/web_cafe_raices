@@ -139,6 +139,7 @@ a {
   flex-direction: row;
   gap: 150px;
   height: 100%;
+  margin: 40px;
 }
 
 .products__product {
@@ -208,7 +209,7 @@ a {
   line-height: 120px;
   font-size: 60px;
   text-shadow: 3px 3px 0px var(--color-carbon);
-  background-image: url(/src/img/taza-selva.jpg);
+  background-image: url(../img/cafe-recogido.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -220,7 +221,10 @@ a {
   list-style-type: none;
 }
 .benefits__list {
+
+  background-position: center;
   list-style-type: none;
+  color: var(--color-crema);
 }
 
 .fa-solid {
