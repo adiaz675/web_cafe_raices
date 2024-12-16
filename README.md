@@ -1,3 +1,5 @@
+Chequeando Github
+
 # Tienda Online de Café
 
 Una tienda online sencilla creada con HTML y CSS donde los usuarios pueden explorar diferentes tipos de café, ver sus características y realizar compras.
